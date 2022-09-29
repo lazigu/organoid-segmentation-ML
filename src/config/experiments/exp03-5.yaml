@@ -1,0 +1,18 @@
+DESCRIPTION: UNET custom trained for semantic segmentation on downsampled isotropic data
+DATASET:
+  NAME: unet
+  # CFG_NAME: unet_isotropic_downsampled
+  CFG_NAME: stardist_test_2022-07-28
+  RESCALE: True
+  SCALE_FACTOR: [0.77777777777778, 0.77777777777778, 0.77777777777778]  # for star data set with shape 288,288,288
+  EXPAND_DIM: False
+  # EXPAND_SIZE: 14
+MODEL:
+  CLASSIFIER_HEAD: UNET
+  TRAIN:
+    PATCHES_SIZE: (64, 224, 224)
+    PATCHES_STEP: 16
+    EPOCHS: 60
+    STEPS_PER_EPOCH: 291     # len(X_train) // batch_size
+    LEARNING_RATE: 0.00001
+    BATCH_SIZE: 1   # need to set batch size, which is a divisor of the number of samples in the dataset if running on multiple GPUs

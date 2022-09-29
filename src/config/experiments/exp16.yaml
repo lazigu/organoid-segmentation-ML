@@ -1,0 +1,10 @@
+# This experiment was run with 3 combinations of sigma values
+# WATERSHED:
+#  SPOT_SIGMA: 3
+#  OUTLINE_SIGMA: 0
+# WATERSHED:
+#  SPOT_SIGMA: 6
+#  OUTLINE_SIGMA: 3
+WATERSHED:
+  SPOT_SIGMA: 5
+  OUTLINE_SIGMA: 2

@@ -1,0 +1,18 @@
+DESCRIPTION: UNET custom trained for semantic segmentation on downsampled anisotropic data
+DATASET:
+  NAME: unet
+  CFG_NAME: unet_downsampled
+  LOAD_STEP: 8
+  RESCALE: True
+  SCALE_FACTOR: [0.5, 0.5, 0.5]
+  EXPAND_DIM:  False # True for plantseg dataset
+  EXPAND_SIZE: 10
+MODEL:
+  CLASSIFIER_HEAD: UNET
+  TRAIN:
+    PATCHES_SIZE: (64, 64, 64)
+    PATCHES_STEP: 40
+    EPOCHS: 60
+    STEPS_PER_EPOCH: 415     # len(X_train) // batch_size
+    LEARNING_RATE: 0.00001
+    BATCH_SIZE: 2   # need to set batch size, which is a divisor of the number of samples in the dataset if running on multiple GPUs

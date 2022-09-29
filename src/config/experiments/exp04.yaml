@@ -1,0 +1,34 @@
+DESCRIPTION: Vollseg custom trained
+MODEL:
+  USE_GPU: True
+  CLASSIFIER_HEAD: vollseg
+  BACKBONE:
+    NAME: unet
+    UNET:
+      N_DEPTH: 3       # default
+      KERNEL_SIZE: 3   # vollseg takes just one integer and makes a tuple: (kern_size, kern_size, kern_size)
+      N_FILTER_BASE: 32
+  VOLLSEG:
+    TRAIN_UNET: True
+    GENERATE_NPZ: True
+    N_PATCHES_PER_IMAGE: 5
+    VALIDATION_SPLIT: 0.2
+  TRAIN:
+    PATCH_SIZE: (32, 160, 160)
+    EPOCHS: 200
+    STEPS_PER_EPOCH: 400
+    LEARNING_RATE: 0.0001
+    BATCH_SIZE: 1
+  PREDICTION:
+    VOLLSEG:
+    MODEL_NAME: UNETexp04_model
+      N_TILES: (2, 2, 2)
+      SLICE_MERGE: True
+      UNET_MODEL: UNETexp04_model
+      MIN_SIZE_MASK: 5
+      MIN_SIZE: 1
+      MAX_SIZE: 1000000
+      USE_PROBABILITY: False
+      DOUNET: True
+      SEEDPOOL: True
+      IOU_THRESHOLD: 0.2

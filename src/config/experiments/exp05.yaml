@@ -1,0 +1,5 @@
+DESCRIPTION: Plantseg pretrained
+DATASET:
+  PATCHES_SIZE: (64, 160, 160)
+MODEL:
+  CLASSIFIER_HEAD: plantseg

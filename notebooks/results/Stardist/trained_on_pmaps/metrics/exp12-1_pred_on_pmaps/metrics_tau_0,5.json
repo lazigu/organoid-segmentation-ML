@@ -1,0 +1,1 @@
+{"criterion": "iou", "thresh": 0.5, "fp": 28, "tp": 356, "fn": 6, "precision": 0.9270833333333334, "recall": 0.9834254143646409, "accuracy": 0.9128205128205128, "f1": 0.9544235924932976, "n_true": 362, "n_pred": 384, "mean_true_score": 0.7578256881039446, "mean_matched_score": 0.7705980311618762, "panoptic_quality": 0.73547694126978, "by_image": false}

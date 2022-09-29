@@ -1,0 +1,10 @@
+DESCRIPTION: UNET custom trained for semantic segmentation, data step 10 (anisotropic data)
+MODEL:
+  CLASSIFIER_HEAD: UNET
+  TRAIN:
+    PATCHES_SIZE: (64, 64, 64)
+    PATCHES_STEP: 54
+    EPOCHS: 200
+    STEPS_PER_EPOCH: 66     # len(X_train) // batch_size
+    LEARNING_RATE: 0.00001
+    BATCH_SIZE: 10   # need to set batch size, which is a divisor of the number of samples in the dataset if running on multiple GPUs

@@ -1,0 +1,11 @@
+DESCRIPTION: Postprocessing of PlantSeg results with custom trained UNET for semantic segmentation on downsampled anisotropic data
+DATASET:
+  RESCALE: True
+  SCALE_FACTOR: [1, 0.5, 0.5]
+  EXPAND_DIM: True
+  EXPAND_SIZE: 14
+MODEL:
+  CLASSIFIER_HEAD: UNET
+  TRAIN:
+    PATCHES_SIZE: (64, 64, 64)
+    PATCHES_STEP: 40

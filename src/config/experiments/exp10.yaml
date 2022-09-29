@@ -1,0 +1,9 @@
+DESCRIPTION: Stardist trained on isotropic raw data
+DATASET:
+  RESCALE: True
+  SCALE_FACTOR: [0.8, 0.8, 0.8]
+MODEL:
+  CLASSIFIER_HEAD: stardist
+  TRAIN:
+    EPOCHS: 500
+    STEPS_PER_EPOCH: 300

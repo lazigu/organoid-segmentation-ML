@@ -1,0 +1,31 @@
+{
+  "axes": "ZYXC",
+  "n_channel_in": 1,
+  "n_channel_out": 1,
+  "n_dim": 3,
+  "probabilistic": false,
+  "train_batch_size": 1,
+  "train_checkpoint": "weights_best.h5",
+  "train_checkpoint_epoch": "weights_now.h5",
+  "train_checkpoint_last": "weights_last.h5",
+  "train_epochs": 200,
+  "train_learning_rate": 0.0001,
+  "train_loss": "mse",
+  "train_reduce_lr": {
+    "patience": 5,
+    "factor": 0.5
+  },
+  "train_steps_per_epoch": 400,
+  "train_tensorboard": true,
+  "unet_input_shape": [
+    null,
+    null,
+    null,
+    1
+  ],
+  "unet_kern_size": 3,
+  "unet_last_activation": "linear",
+  "unet_n_depth": 3,
+  "unet_n_first": 32,
+  "unet_residual": true
+}

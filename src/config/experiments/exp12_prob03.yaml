@@ -1,0 +1,9 @@
+DESCRIPTION: Prediction with Stardist custom trained on probability maps from APOC, changed probability threshold value
+DATASET:
+  RESCALE: True
+  SCALE_FACTOR: [0.8, 0.8, 0.8]
+MODEL:
+  CLASSIFIER_HEAD: stardist
+  STARDIST:
+    PROB_THRESHOLD: 0.3
+    NMS_THRESHOLD: 0.4  # default

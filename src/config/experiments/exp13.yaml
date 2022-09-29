@@ -1,0 +1,27 @@
+DESCRIPTION: Plantseg pretrained, prediction on isotropic data (takes way too long -> memory problems)
+DATASET:
+  PATCHES_SIZE: (49, 288, 288)
+MODEL:
+  CLASSIFIER_HEAD: plantseg
+  PLANTSEG:
+    PREPROCESSING:
+      ACTIVE: True
+      FACTOR: (4.25531914893617, 1.1533333333333333, 1.1533333333333333) # (4.25531914893617, 6.666666666666667, 6.666666666666667)
+      FILTER:
+        STATE: True
+        PARAM: 1.0
+    CNN:
+      PREDICTION:
+        STATE: True
+        MODEL_NAME: generic_light_sheet_3d_unet
+        NUM_WORKERS: 1
+      POSTPROCESSING:
+        RESCALING_FACTOR: (1, 1, 1) # (0.23500000000000001, 0.15, 0.15)
+    SEGMENTATION:
+      NAME: GASP
+      WS_2D: False
+      BETA: 0.7
+      POSTPROCESSING:
+        STATE: True
+        RESCALING_FACTOR: (1, 1, 1) # (0.23500000000000001, 0.15, 0.15)
+        SAVE_RAW: False

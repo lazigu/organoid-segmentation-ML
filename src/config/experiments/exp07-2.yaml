@@ -1,0 +1,9 @@
+MODEL:
+  CLASSIFIER_HEAD: apoc
+APOC:
+  CL_FILENAME: ProbabilityMapper2.cl
+  CLF: ProbabilityMapper
+  FEATURES: top_hat_box_of_gaussian_blur=3 maximum_box_of_top_hat_box_of_gaussian_blur=2 laplace_box_of_top_hat_box_of_gaussian_blur=10 maximum_box_of_laplace_box_of_gaussian_blur=1
+  MAX_DEPTH: 4
+  NUM_ENSEMBLES: 100
+  OUTPUT_PROBABILITY_OF_CLASS: 1

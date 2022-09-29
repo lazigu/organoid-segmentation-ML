@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="ng-csp" data-placeholder-focus="false" lang="en" >
+	<head data-requesttoken="ZXEaOSs6XDdVQUAlEDMnAgMFZhRzHzVfCQk8W1BrIzE=:3IVniQ/tguqTciuJPU6EKKX3qdN928gB8UzK1SlJNus=">
+		<meta charset="utf-8">
+		<title>
+		ownCloud		</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="referrer" content="never">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+					<meta name="apple-itunes-app" content="app-id=1359583808">
+				<meta name="theme-color" content="#041e42">
+		<link rel="icon" href="/core/img/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" href="/core/img/favicon-touch.png">
+		<link rel="mask-icon" sizes="any" href="/core/img/favicon-mask.svg" color="#041e42">
+					<link rel="stylesheet" href="/core/vendor/select2/select2.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/styles.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/inputs.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/header.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/icons.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/fonts.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/apps.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/global.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/fixes.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/multiselect.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/mobile.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/vendor/jquery-ui/themes/base/jquery-ui.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/jquery-ui-fixes.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/tooltip.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/share.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/apps/files_versions/css/versions.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/apps/files_pdfviewer/css/style.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/apps/firstrunwizard/css/colorbox.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/apps/firstrunwizard/css/firstrunwizard.css?v=d4921e737a64632c0352258d98a34b8d">
+					<link rel="stylesheet" href="/core/css/jquery.ocdialog.css?v=d4921e737a64632c0352258d98a34b8d">
+									<script src="/index.php/core/js/oc.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/jquery/dist/jquery.min.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/jquery-migrate/jquery-migrate.min.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/jquery-ui/ui/jquery-ui.custom.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/underscore/underscore.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/moment/min/moment-with-locales.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/handlebars/handlebars.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/blueimp-md5/js/md5.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/bootstrap/js/tooltip.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/backbone/backbone.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/es6-promise/es6-promise.auto.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/davclient.js/lib/client.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/clipboard/dist/clipboard.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/bowser/src/bowser.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/jquery.ocdialog.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/oc-dialogs.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/js.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/l10n.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/octemplate.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/eventsource.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/config.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/search/js/search.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/oc-requesttoken.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/apps.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/mimetype.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/mimetypelist.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/snapjs/dist/latest/snap.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/vendor/select2/select2.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/oc-backbone.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/oc-backbone-webdav.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/placeholder.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/jquery.avatar.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/shareconfigmodel.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharemodel.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharescollection.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/shareitemmodel.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharedialogresharerinfoview.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharedialoglinklistview.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharedialoglinkshareview.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharedialogmailview.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharedialoglinksocialview.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharedialoglinkexpirationview.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharedialogshareelistview.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/sharedialogview.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/share.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/user.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/apps/files_mediaviewer/js/files_mediaviewer_init.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/apps/files_pdfviewer/js/previewplugin.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/apps/firstrunwizard/js/jquery.colorbox.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/apps/firstrunwizard/js/firstrunwizard.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/files/fileinfo.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					<script src="/core/js/files/client.js?v=d4921e737a64632c0352258d98a34b8d"></script>
+					</head>
+	<body id="body-login"  >
+		<noscript>
+	<div id="nojavascript">
+		<div>
+			This application requires JavaScript for correct operation. Please <a href="http://enable-javascript.com/" target="_blank" rel="noreferrer">enable JavaScript</a> and reload the page.		</div>
+	</div>
+</noscript>
+		<div class="wrapper">
+			<div class="v-align">
+									<header role="banner">
+						<div id="header">
+							<div class="logo">
+								<h1 class="hidden-visually">
+									ownCloud								</h1>
+							</div>
+							<div id="logo-claim" style="display:none;"></div>
+						</div>
+					</header>
+									<ul>
+		<li class="error">
+			File not found<br>
+			<p class="hint">The specified document has not been found on the server.</p>
+			<p class="hint"><a href="/index.php">You can click here to return to ownCloud.</a></p>
+		</li>
+	</ul>
+			</div>
+		</div>
+		<footer role="contentinfo">
+			<p class="info">
+				<a href="https://owncloud.com" target="_blank" rel="noreferrer">ownCloud</a> &ndash; A safe home for all your data			</p>
+		</footer>
+	</body>
+</html>

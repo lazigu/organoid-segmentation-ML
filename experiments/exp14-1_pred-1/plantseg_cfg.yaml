@@ -1,0 +1,68 @@
+cnn_postprocessing:
+  factor:
+  - 0.23500000000000001
+  - 0.8670520231213873
+  - 0.8670520231213873
+  order: 2
+  output_type: data_float32
+  save_raw: false
+  state: true
+  tiff: true
+cnn_prediction:
+  device: cuda
+  mirror_padding:
+  - 16
+  - 32
+  - 32
+  model_name: Custom_on_Pretrained_3DUnet_lightsheet_boundary
+  model_update: false
+  num_workers: 1
+  patch: !!python/tuple
+  - 49
+  - 288
+  - 288
+  patch_halo:
+  - 8
+  - 16
+  - 16
+  state: true
+  stride:
+  - 24
+  - 144
+  - 144
+  version: best
+path: C:\Users\lazi257c\Projects\organoid-segmentation-ML\data\plantseg_train_val_test_2022-08-17\test\raw
+preprocessing:
+  crop_volume: '[:,:,:]'
+  factor:
+  - 4.25531914893617
+  - 1.1533333333333333
+  - 1.1533333333333333
+  filter:
+    filter_param: 1.0
+    state: false
+    type: gaussian
+  order: 2
+  save_directory: C:\Users\lazi257c\Projects\organoid-segmentation-ML\experiments\exp14-1_pred-1\results\PreProcessing
+  state: true
+segmentation:
+  beta: 0.7
+  name: GASP
+  post_minsize: 100
+  run_ws: true
+  save_directory: C:\Users\lazi257c\Projects\organoid-segmentation-ML\experiments\exp14-1_pred-1\results\Segmentation
+  state: true
+  ws_2D: false
+  ws_minsize: 50
+  ws_sigma: 2.0
+  ws_threshold: 0.6
+  ws_w_sigma: 0
+segmentation_postprocessing:
+  factor:
+  - 1
+  - 1
+  - 1
+  order: 0
+  save_raw: false
+  state: true
+  tiff: true

@@ -1,0 +1,30 @@
+MODEL:
+  CLASSIFIER_HEAD: apoc
+APOC:
+  CL_FILENAME: ProbabilityMapper16.cl
+  CLF: ProbabilityMapper
+  FEATURES: maximum_box_of_laplace_box_of_gaussian_blur=1 gaussian_blur=18 difference_of_gaussian=2
+  MAX_DEPTH: 6
+  NUM_ENSEMBLES: 100
+  OUTPUT_PROBABILITY_OF_CLASS: 1
+
+# Clf0:  MAX_DEPTH: 5  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf1:  MAX_DEPTH: 5  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4
+# Clf2:  MAX_DEPTH: 4                top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1
+# Clf3:  MAX_DEPTH: 5  top_hat_box=5 top_hat_box_of_gaussian_blur=1   laplace_box_of_top_hat_box_of_gaussian_blur=1                                                    maximum_box_of_laplace_box_of_gaussian_blur=1
+# Clf4:  MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf5:  MAX_DEPTH: 5                top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf6:  MAX_DEPTH: 7  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf7:  MAX_DEPTH: 6  top_hat_box=5                                  laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf8:  MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3                                                    maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf9:  MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10                                                   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf10: MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2                                                  difference_of_gaussian=4  gaussian_blur=18
+# Clf11: MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1                            gaussian_blur=18
+# Clf12: MAX_DEPTH: 4                                                 laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2                                                                            gaussian_blur=18
+# Clf13: MAX_DEPTH: 4                                                 laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1                            gaussian_blur=18
+# Clf14: MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18  difference_of_gaussian=2
+# Clf15: MAX_DEPTH: 4                                                                                                                                                  maximum_box_of_laplace_box_of_gaussian_blur=1                            gaussian_blur=18  difference_of_gaussian=2
+# Clf16: MAX_DEPTH: 6                                                                                                                                                  maximum_box_of_laplace_box_of_gaussian_blur=1                            gaussian_blur=18  difference_of_gaussian=2
+# Clf17: MAX_DEPTH: 6                top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=5    maximum_box_of_top_hat_box_of_gaussian_blur=1   maximum_box_of_laplace_box_of_gaussian_blur=1                            gaussian_blur=20                             maximum_box_of_top_hat_box_of_gaussian_blur=1
+# Clf18: MAX_DEPTH: 6                top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=5    maximum_box_of_top_hat_box_of_gaussian_blur=1   maximum_box_of_laplace_box_of_gaussian_blur=1                            gaussian_blur=20                             maximum_box_of_top_hat_box_of_gaussian_blur=1  laplace_box_of_top_hat_box_of_gaussian_blur=10
+# Clf19: MAX_DEPTH: 8                top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=5    maximum_box_of_top_hat_box_of_gaussian_blur=1   maximum_box_of_laplace_box_of_gaussian_blur=1                            gaussian_blur=20                             maximum_box_of_top_hat_box_of_gaussian_blur=1  laplace_box_of_top_hat_box_of_gaussian_blur=10

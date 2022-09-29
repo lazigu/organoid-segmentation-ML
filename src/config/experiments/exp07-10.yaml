@@ -1,0 +1,21 @@
+MODEL:
+  CLASSIFIER_HEAD: apoc
+APOC:
+  CL_FILENAME: ProbabilityMapper10.cl
+  CLF: ProbabilityMapper
+  FEATURES: top_hat_box=5 top_hat_box_of_gaussian_blur=3 laplace_box_of_top_hat_box_of_gaussian_blur=10 maximum_box_of_top_hat_box_of_gaussian_blur=2 difference_of_gaussian=4 gaussian_blur=18
+  MAX_DEPTH: 6
+  NUM_ENSEMBLES: 100
+  OUTPUT_PROBABILITY_OF_CLASS: 1
+
+# Clf0:  MAX_DEPTH: 5  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf1:  MAX_DEPTH: 5  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4
+# Clf2:  MAX_DEPTH: 4                top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1
+# Clf3:  MAX_DEPTH: 5  top_hat_box=5 top_hat_box_of_gaussian_blur=1   laplace_box_of_top_hat_box_of_gaussian_blur=1                                                    maximum_box_of_laplace_box_of_gaussian_blur=1
+# Clf4:  MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf5:  MAX_DEPTH: 5                top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf6:  MAX_DEPTH: 7  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf7:  MAX_DEPTH: 6  top_hat_box=5                                  laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf8:  MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3                                                    maximum_box_of_top_hat_box_of_gaussian_blur=2   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf9:  MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10                                                   maximum_box_of_laplace_box_of_gaussian_blur=1  difference_of_gaussian=4  gaussian_blur=18
+# Clf10: MAX_DEPTH: 6  top_hat_box=5 top_hat_box_of_gaussian_blur=3   laplace_box_of_top_hat_box_of_gaussian_blur=10   maximum_box_of_top_hat_box_of_gaussian_blur=2                                                  difference_of_gaussian=4  gaussian_blur=18

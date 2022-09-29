@@ -1,0 +1,15 @@
+DESCRIPTION: Vollseg pretrained
+MODEL:
+  CLASSIFIER_HEAD: vollseg
+  PREDICTION:
+    VOLLSEG:
+      MODEL_NAME: embryo_cell_model
+      N_TILES: (2, 2, 2)
+      SLICE_MERGE: True
+      UNET_MODEL: embryo_cell_model
+      MIN_SIZE_MASK: 5
+      MIN_SIZE: 1
+      MAX_SIZE: 1000000
+      USE_PROBABILITY: False
+      DOUNET: True
+      IOU_THRESHOLD: 0.3

@@ -1,0 +1,27 @@
+DESCRIPTION: Plantseg pretrained (prediction on anisotropic data, Plantseg dataset)
+DATASET:
+  PATCHES_SIZE: (49, 288, 288)
+MODEL:
+  CLASSIFIER_HEAD: plantseg
+  PLANTSEG:
+    PREPROCESSING:
+      ACTIVE: False
+      FACTOR: (4.25531914893617, 1.1533333333333333, 1.1533333333333333)
+    CNN:
+      PREDICTION:
+        STATE: False
+        MODEL_NAME: Custom_on_Pretrained_3DUnet_lightsheet_boundary
+        NUM_WORKERS: 1
+      POSTPROCESSING:
+        STATE: False
+        RESCALING_FACTOR: (1, 1, 1)
+    SEGMENTATION:
+      NAME: MutexWS
+      BETA: 0.6
+      WS_2D: False
+      WS_MINSIZE: 50
+      WS_THRESHOLD: 0.6
+      WS_W_SIGMA: 0
+      POSTPROCESSING:
+        STATE: True
+        RESCALING_FACTOR: [0.23500000000000001, 0.8670520231213873, 0.8670520231213873]

@@ -1,0 +1,9 @@
+DESCRIPTION: UNET custom trained for semantic segmentation (anisotropic data)
+MODEL:
+  CLASSIFIER_HEAD: UNET
+  TRAIN:
+    PATCHES_SIZE: (64, 64, 64)
+    PATCHES_STEP: 54
+    EPOCHS: 70
+    LEARNING_RATE: 0.00001
+    BATCH_SIZE: 2

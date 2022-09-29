@@ -1,0 +1,10 @@
+DESCRIPTION: Postprocessing of VollSeg results with custom trained UNET for semantic segmentation from exp03-5 on stardist_fixed_preprocessed_2022-07-07/images/isotropic/scaled
+DATASET:
+  CFG_NAME: unet_downsampled
+  RESCALE: False    # dataset on which prediction will be performed is already rescaled
+  EXPAND_DIM: False   # data is isotropic with original shape 224,224,224
+MODEL:
+  CLASSIFIER_HEAD: UNET
+  TRAIN:
+    PATCHES_SIZE: (64, 224, 224)
+    PATCHES_STEP: 32

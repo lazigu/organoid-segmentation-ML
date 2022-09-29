@@ -1,0 +1,4 @@
+,0,1,2,3,sum
+maximum_box_of_laplace_box_of_gaussian_blur=1,0.28,0.31,0.3125,0.36,1.2625000000000002
+gaussian_blur=18,0.4,0.375,0.3525,0.35125,1.47875
+difference_of_gaussian=2,0.32,0.315,0.335,0.28875,1.25875

@@ -1,0 +1,10 @@
+DESCRIPTION: Stardist custom trained on resampled and cropped data
+DATASET:
+  RESCALE: True
+  SCALE_FACTOR: [0.8, 0.8, 0.8]  # otherwise keep getting OOM
+MODEL:
+  CLASSIFIER_HEAD: stardist
+  TRAIN:
+    PATCHES_SIZE: (64, 128, 128)
+    EPOCHS: 300
+    STEPS_PER_EPOCH: 290

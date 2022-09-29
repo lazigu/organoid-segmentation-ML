@@ -1,0 +1,10 @@
+DESCRIPTION: Stardist custom trained on probability maps (Classifier16) from APOC
+DATASET:
+  RESCALE: True
+  SCALE_FACTOR: [0.8, 0.8, 0.8]
+MODEL:
+  CLASSIFIER_HEAD: stardist
+  TRAIN:
+    PATCHES_SIZE: (64, 224, 224)
+    EPOCHS: 400
+    STEPS_PER_EPOCH: 300

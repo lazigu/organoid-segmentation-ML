@@ -1,0 +1,10 @@
+# This experiment was run with 2 different configurations, where (1) extracted centroids are used as seeds and
+# (2) eroded by 4 pixels StarDist predictions are directly used as seeds
+# WATERSHED:
+#   SPOT_SIGMA: 5
+#   OUTLINE_SIGMA: 2
+#   CUSTOM_SEEDED_WT: False
+WATERSHED:
+  SPOT_SIGMA: 5
+  OUTLINE_SIGMA: 2
+  CUSTOM_SEEDED_WT: True

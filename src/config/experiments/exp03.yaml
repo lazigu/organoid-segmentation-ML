@@ -1,0 +1,16 @@
+DESCRIPTION: Vollseg custom trained
+MODEL:
+  CLASSIFIER_HEAD: vollseg
+  PREDICTION:
+    MODEL_NAME: UNET_semantic_seg
+    VOLLSEG:
+      N_TILES: (2, 2, 2)
+      SLICE_MERGE: True
+      UNET_MODEL: UNET_semantic_seg
+      MIN_SIZE_MASK: 5
+      MIN_SIZE: 1
+      MAX_SIZE: 1000000
+      USE_PROBABILITY: False
+      DOUNET: True
+      SEEDPOOL: True
+      IOU_THRESHOLD: 0.2

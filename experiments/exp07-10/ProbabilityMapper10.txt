@@ -1,0 +1,1 @@
+top_hat_box=5 top_hat_box_of_gaussian_blur=3 laplace_box_of_top_hat_box_of_gaussian_blur=10 maximum_box_of_top_hat_box_of_gaussian_blur=2 difference_of_gaussian=4 gaussian_blur=18

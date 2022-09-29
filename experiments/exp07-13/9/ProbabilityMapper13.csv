@@ -1,0 +1,5 @@
+,0,1,2,3,sum
+laplace_box_of_top_hat_box_of_gaussian_blur=10,0.33,0.23,0.165,0.17875,0.90375
+maximum_box_of_top_hat_box_of_gaussian_blur=2,0.52,0.29,0.2475,0.2975,1.355
+maximum_box_of_laplace_box_of_gaussian_blur=1,0.15,0.22,0.2225,0.1675,0.76
+gaussian_blur=18,0.0,0.26,0.365,0.35625,0.98125

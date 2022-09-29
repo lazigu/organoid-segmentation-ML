@@ -1,0 +1,16 @@
+DESCRIPTION: Dataset generation for Plantseg
+SELECT_GPU:
+DATASET:
+  NAME: pos14
+  CFG_NAME: plantseg
+  SPLIT_TO_FRAMES: True
+  MAKE_ISOTROPIC: False
+  RESCALE: False
+  NORMALIZE: False
+  FILL_HOLES: False
+  MAKE_BINARY_LABELS: False
+  MAKE_ERODED_LABELS: False
+  SPLIT_FOLDERS: True
+  SPLIT_RATIO: [0.7, 0.2, 0.1]
+  CROP: True
+  CROP_SIZE: [11, 60, 72, 360, 42, 330]   # [z1, z2, h1, h2, w1, w2] original shape 70, 378, 400

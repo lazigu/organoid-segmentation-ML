@@ -1,0 +1,57 @@
+data:
+  axes: ZYX
+  rgb: false
+prediction:
+  donormalize: true
+  dounet: true
+  iou_threshold: 0.3
+  lower_perc: 1
+  max_size: 100000000000
+  min_size: 1000
+  min_size_mask: 1000
+  model_dir: /experiments/exp02
+  model_name: embryo_cell_model
+  n_tiles: !!python/tuple
+  - 2
+  - 2
+  - 2
+  nms_thresh: null
+  noise_model: null
+  path: data/stardist_train_val_test_2022-08-17/test/raw_normalized
+  prob_thresh: null
+  roi_model: null
+  save_dir: experiments/exp02/results
+  seedpool: true
+  slice_merge: true
+  star_mode: null
+  unet_model: embryo_cell_model
+  upper_perc: 99.8
+  use_probability: false
+training:
+  axes: ZYXC
+  n_channel_in: 1
+  n_channel_out: 1
+  n_dim: 3
+  probabilistic: false
+  train_batch_size: 1
+  train_checkpoint: weights_best.h5
+  train_checkpoint_epoch: weights_now.h5
+  train_checkpoint_last: weights_last.h5
+  train_epochs: 200
+  train_learning_rate: 0.0001
+  train_loss: mse
+  train_reduce_lr:
+    factor: 0.5
+    patience: 5
+  train_steps_per_epoch: 400
+  train_tensorboard: true
+  unet_input_shape:
+  - null
+  - null
+  - null
+  - 1
+  unet_kern_size: 3
+  unet_last_activation: linear
+  unet_n_depth: 3
+  unet_n_first: 32
+  unet_residual: true

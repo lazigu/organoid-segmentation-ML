@@ -1,0 +1,16 @@
+DESCRIPTION: Dataset generation for StarDist
+SELECT_GPU:
+DATASET:
+  NAME: pos14
+  CFG_NAME: stardist
+  VOXEL_SIZE: [1, 0.173, 0.173]
+  SPLIT_TO_FRAMES: True
+  MAKE_ISOTROPIC: True
+  RESCALE: False
+  #SCALE_FACTOR: [0.8, 0.8, 0.8]
+  NORMALIZE: True
+  FILL_HOLES: True
+  SPLIT_FOLDERS: True
+  SPLIT_RATIO: [0.9, 0, 0.1]  # Stardist does the splitting into train/val automatically, therefore, split without val here
+  CROP: True
+  CROP_SIZE: [60, 348, 72, 360, 42, 330]   # [z1, z2, h1, h2, w1, w2] original shape 70, 378, 400

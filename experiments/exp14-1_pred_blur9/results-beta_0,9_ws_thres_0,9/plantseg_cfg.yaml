@@ -1,0 +1,68 @@
+cnn_postprocessing:
+  factor:
+  - 1
+  - 1
+  - 1
+  order: 2
+  output_type: data_float32
+  save_raw: false
+  state: false
+  tiff: true
+cnn_prediction:
+  device: cuda
+  mirror_padding:
+  - 16
+  - 32
+  - 32
+  model_name: Custom_on_Pretrained_3DUnet_lightsheet_boundary
+  model_update: false
+  num_workers: 1
+  patch: !!python/tuple
+  - 50
+  - 166
+  - 166
+  patch_halo:
+  - 8
+  - 16
+  - 16
+  state: false
+  stride:
+  - 25
+  - 83
+  - 83
+  version: best
+path: C:\Users\lazi257c\Projects\organoid-segmentation-ML\experiments\exp14-1_pred\results_filter_true_sigma_1\PreProcessing\Custom_on_Pretrained_3DUnet_lightsheet_boundary
+preprocessing:
+  crop_volume: '[:,:,:]'
+  factor:
+  - 4.25531914893617
+  - 1.1533333333333333
+  - 1.1533333333333333
+  filter:
+    filter_param: 1.0
+    state: false
+    type: gaussian
+  order: 2
+  save_directory: C:\Users\lazi257c\Projects\organoid-segmentation-ML\experiments\exp14-1_pred_blur9\results\PreProcessing
+  state: false
+segmentation:
+  beta: 0.9
+  name: GASP
+  post_minsize: 50
+  run_ws: true
+  save_directory: C:\Users\lazi257c\Projects\organoid-segmentation-ML\experiments\exp14-1_pred_blur9\results\Segmentation
+  state: true
+  ws_2D: false
+  ws_minsize: 50
+  ws_sigma: 2.0
+  ws_threshold: 0.9
+  ws_w_sigma: 0
+segmentation_postprocessing:
+  factor:
+  - 0.23500000000000001
+  - 0.8670520231213873
+  - 0.8670520231213873
+  order: 0
+  save_raw: false
+  state: true
+  tiff: true

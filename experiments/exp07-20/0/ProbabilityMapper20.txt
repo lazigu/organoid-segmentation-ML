@@ -1,0 +1,1 @@
+top_hat_box_of_gaussian_blur=3 maximum_box_of_laplace_box_of_gaussian_blur=1 gaussian_blur=20 maximum_box_of_laplace_box_of_gaussian_blur=5
