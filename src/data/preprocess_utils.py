@@ -967,7 +967,7 @@ def convert_tif_to_hdf5(trn_raw_dir, trn_labels_dir, val_raw_dir, val_labels_dir
         hf.close()  # close the hdf5 file
     del images, labels, fnames, hdf5_fnames
 
-    # MAKE LABELS DATASET
+    # MAKE VALIDATION DATASET
     (images, fnames), (labels, _) = load_dataset(rawdir=val_raw_dir, labelsdir=val_labels_dir, return_fnames=True)
     hdf5_fnames = [name.split(".")[0] + ".hdf5" for name in fnames]
 
