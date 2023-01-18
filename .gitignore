@@ -193,3 +193,4 @@ src/config/experiments/nr_of_trees/exp07-nr-of-trees.yaml
 **/paths_predict_*.yaml
 *.lnk
 notebooks/results/Measurements/*
+experiments/exp01/test/*
