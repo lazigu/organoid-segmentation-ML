@@ -254,7 +254,7 @@ vollseg==5.0.8
 wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1600965781394/work
 webencodings==0.5.1
 websocket-client @ file:///home/conda/feedstock_root/build_artifacts/websocket-client_1655796432389/work
-Werkzeug==2.2.1
+Werkzeug==2.2.3
 widgetsnbextension @ file:///home/conda/feedstock_root/build_artifacts/widgetsnbextension_1655939017940/work
 win-inet-pton @ file:///D:/bld/win_inet_pton_1648771910527/work
 win32-setctime==1.1.0
