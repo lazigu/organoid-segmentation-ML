@@ -190,7 +190,7 @@ def stardist_train(raw_filepath, labels_filepath, cfg, output_path):
     if use_gpu:
         from csbdeep.utils.tf import limit_gpu_memory
         # adjust as necessary: limit GPU memory to be used by TensorFlow to leave some to OpenCL-based computations
-        limit_gpu_memory(0.8, total_memory=8000)
+        limit_gpu_memory(0.8, total_memory=40000)
         # alternatively, try this:
         # limit_gpu_memory(None, allow_growth=True)
 
